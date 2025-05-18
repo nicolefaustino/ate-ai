@@ -14,11 +14,15 @@ export default function GatsbyLanding() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Header */}
-      <header className="bg-black py-4 px-6">
+      <header className="bg-gray-900 py-4 px-6">
         <div className="container mx-auto flex justify-center items-center relative">
-          <h1 className="text-4xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-amber-300 to-yellow-500">
-            THE GREAT GATSBY
-          </h1>
+          <Link to="/" className="flex justify-center">
+            <img
+              src="https://i.imgur.com/P3MUhr9.png"
+              alt="THE GREAT GATSBY"
+              className="h-16 object-contain"
+            />
+          </Link>
 
           <div className="absolute right-0">
             <form onSubmit={handleSearch} className="flex items-center">
@@ -41,7 +45,7 @@ export default function GatsbyLanding() {
       </header>
 
       {/* Navigation */}
-      <nav className="bg-gray-900 text-white py-3 border-t border-b border-gray-800">
+      <nav className="bg-gray-900 text-white py-3 border-t border-b border-gray-800 z-20 relative">
         <div className="container mx-auto flex justify-center items-center space-x-8">
           <div className="relative group">
             <button className="flex items-center space-x-1 hover:text-yellow-400 transition-colors">
@@ -58,7 +62,7 @@ export default function GatsbyLanding() {
                 to="/character-quiz"
                 className="block py-1 px-2 hover:bg-gray-800"
               >
-                Character Quiz
+                Which Character Are You?
               </Link>
               <Link
                 to="/timeline-challenge"
@@ -129,13 +133,6 @@ export default function GatsbyLanding() {
           </div>
 
           <Link
-            to="/history"
-            className="hover:text-yellow-400 transition-colors"
-          >
-            History
-          </Link>
-
-          <Link
             to="/author"
             className="hover:text-yellow-400 transition-colors"
           >
@@ -150,24 +147,24 @@ export default function GatsbyLanding() {
         <div
           className="absolute inset-0 z-0"
           style={{
-            backgroundImage: `url('https://i.imgur.com/XybNimc.png')`,
+            backgroundImage: `url('https://i.imgur.com/TGcNthy.png')`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
         ></div>
 
         {/* Featured content */}
-        <div className="container mx-auto px-4 py-12 relative z-10">
-          <div className="max-w-4xl mx-auto text-center text-white">
-            <h2 className="text-5xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-amber-300 to-yellow-500">
-              THE ROARING TWENTIES
+        <div className="container mx-auto px-4 py-12 relative">
+          <div className="max-w-4xl text-white text-left pl-8">
+            <h2 className="text-6xl md:text-7xl font-bold mb-6 text-white bg-clip-text">
+              THE ROARING <br /> TWENTIES
             </h2>
-            <p className="text-xl mb-8 text-gray-300">
+            <p className="text-xl md:text-2xl mb-8 text-gray-300 max-w-3xl">
               Step into the glittering world of wealth, ambition, and the
               American Dream. Explore the iconic novel that defined an era.
             </p>
-            <button className="bg-gradient-to-r from-amber-500 to-yellow-600 text-white px-8 py-3 rounded-md font-medium hover:from-amber-600 hover:to-yellow-700 transition-all">
-              Explore Now
+            <button className="cursor-pointer bg-gradient-to-r from-amber-500 to-yellow-600 text-white px-8 py-3 rounded-4xl font-medium hover:from-amber-600 hover:to-yellow-700 transition-all text-sm">
+              Read More
             </button>
           </div>
 
@@ -222,17 +219,6 @@ export default function GatsbyLanding() {
             © {new Date().getFullYear()} The Great Gatsby | A F. Scott
             Fitzgerald Experience
           </p>
-          <div className="flex justify-center space-x-4 mt-4">
-            <a href="#" className="hover:text-amber-400">
-              Privacy Policy
-            </a>
-            <a href="#" className="hover:text-amber-400">
-              Terms of Use
-            </a>
-            <a href="#" className="hover:text-amber-400">
-              Contact
-            </a>
-          </div>
         </div>
       </footer>
     </div>

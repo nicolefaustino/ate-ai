@@ -9,6 +9,7 @@ import Timeline from './Timeline'
 import Characters from './Characters'
 import History from './History'
 import Author from './Author'
+import CharacterQuiz from './CharacterQuiz.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -21,6 +22,7 @@ createRoot(document.getElementById('root')).render(
         <Route path="/characters" element={<Characters />} />
         <Route path="/history" element={<History />} />
         <Route path="/author" element={<Author />} />
+        <Route path="/character-quiz" element={<CharacterQuiz />} />
       </Routes>
     </Router>
   </StrictMode>
