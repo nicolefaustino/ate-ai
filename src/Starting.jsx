@@ -94,7 +94,7 @@ export default function GatsbyLanding() {
           </Link>
 
           <div className="relative group">
-            <button className="flex items-center space-x-1 hover:text-yellow-400 transition-colors">
+            <button className="cursor-pointer flex items-center space-x-1 hover:text-yellow-400 transition-colors">
               <span>Characters</span>
               <ChevronDown className="h-4 w-4" />
             </button>
