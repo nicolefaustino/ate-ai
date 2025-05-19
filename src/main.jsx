@@ -10,6 +10,7 @@ import Characters from './Characters'
 import History from './History'
 import Author from './Author'
 import CharacterQuiz from './CharacterQuiz.jsx'
+import JayGatsby from './JayGatsby.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -23,6 +24,7 @@ createRoot(document.getElementById('root')).render(
         <Route path="/history" element={<History />} />
         <Route path="/author" element={<Author />} />
         <Route path="/character-quiz" element={<CharacterQuiz />} />
+        <Route path="/jaygatsby" element={<JayGatsby />} />
       </Routes>
     </Router>
   </StrictMode>
