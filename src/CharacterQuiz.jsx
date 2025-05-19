@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import Header from "./Header"; 
 
 const bgImage = "https://i.imgur.com/4TrQHKD.jpeg";
 
@@ -148,6 +149,7 @@ export default function GatsbyQuiz() {
       className="min-h-screen bg-cover bg-center text-white"
       style={{ backgroundImage: `url(${bgImage})` }}
     >
+      <Header/>
       <div className="bg-black/60 min-h-screen flex flex-col items-center justify-center p-8">
         {!started ? (
           <div className="text-center space-y-6">
