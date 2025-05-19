@@ -19,8 +19,10 @@ export default function Characters() {
       shortName: "Gatsby",
       description:
         "A mysterious millionaire known for his lavish parties and unrelenting love for Daisy Buchanan. Gatsby is driven by ambition and the illusion of the American Dream.",
-      image: "https://i.imgur.com/7K3I9ph.jpeg",
-      quote: "Can't repeat the past? Why of course you can!",
+      image: "https://i.imgur.com/SmLQ4ck.png",
+      relationships:
+        "Gatsby's relationship with Daisy drives the plot. His idealization of her represents his broader idealization of wealth and status.",
+      quote: "So we beat on, boats against the current, borne back ceaselessly into the past",
     },
     {
       id: "daisy",
@@ -28,7 +30,7 @@ export default function Characters() {
       shortName: "Daisy",
       description:
         "Beautiful and shallow, Daisy is Gatsby's long-lost love. She is married to Tom Buchanan but remains the object of Gatsby's obsession.",
-      image: "https://i.imgur.com/oTCQiF1.jpeg",
+      image: "https://i.imgur.com/XzI2zbh.png",
       quote: "I hope she'll be a fool — that's the best thing a girl can be in this world, a beautiful little fool.",
     },
     {
@@ -37,7 +39,7 @@ export default function Characters() {
       shortName: "Nick",
       description:
         "The novel's narrator, Nick is Gatsby's neighbor and Daisy's cousin. He offers an outsider's perspective on the events of the story.",
-      image: "https://i.imgur.com/Xn4sWWg.jpeg",
+      image: "https://i.imgur.com/XzI2zbh.png",
       quote: "I was within and without, simultaneously enchanted and repelled by the inexhaustible variety of life.",
     },
     {
