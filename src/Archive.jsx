@@ -43,6 +43,12 @@ export default function Archive() {
     return (
       <div className="min-h-screen bg-black text-white">
         <Header/>
+        <div className="relative min-h-screen w-full overflow-hidden">
+        <img
+          src="https://i.imgur.com/NcRBieV.png"
+          alt="Fitzgerald Archive"
+          className="absolute inset-0 w-full h-full object-cover opacity-40"
+        />
         <style>{`
         @keyframes slideInLeft {
           from {
@@ -61,12 +67,6 @@ export default function Archive() {
       `}</style>
 
         <div className="container mx-auto px-4 py-12">
-          <h1 className="text-4xl font-bold mb-1 text-transparent bg-clip-text bg-white text-center">
-           Fitzgerald Archive
-          </h1>
-          <h4 className="text-2xl font-bold mb-8 text-transparent bg-clip-text bg-gray-500 text-center">
-           through the years
-          </h4>
          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 slide-in-left">
           {books.map((book, index) => (
             <div
@@ -77,7 +77,7 @@ export default function Archive() {
             href={book.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="block border border-transparent rounded-xl p-4 shadow-md transition-transform transform hover:scale-105 hover:shadow-xl duration-300 h-full"
+            className="block border border-transparent rounded-xl p-4 transition-transform transform hover:scale-105 hover:shadow-xl duration-300 h-full"
           >
             {book.image && (
               <img
@@ -93,6 +93,7 @@ export default function Archive() {
           ))}
         </div>
     </div>
+      </div>
       </div>
  );
 };
