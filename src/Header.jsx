@@ -48,62 +48,72 @@ export default function Header() {
         <div className="container mx-auto flex justify-center items-center space-x-8">
           <div className="relative group">
             <button className="flex items-center space-x-1 hover:text-yellow-400 transition-colors">
-              <Link
-                to="/quizzes"
-                className="hover:text-yellow-400 transition-colors"
-              >
-                Quizzes & Puzzles
-              </Link>
+              <span>About</span>
               <ChevronDown className="h-4 w-4" />
             </button>
             <div className="absolute hidden group-hover:block bg-gray-900 p-2 min-w-40 z-10">
-              <Link to="/character-quiz" className="block py-1 px-2 hover:bg-gray-800">
-                Which Character Are You?
+              <Link
+                to="/summary"
+                className="block py-1 px-2 hover:bg-gray-800"
+              >
+                Summary
               </Link>
-              <Link to="/timeline-challenge" className="block py-1 px-2 hover:bg-gray-800">
-                Timeline Challenge
-              </Link>
-              <Link to="/roaring-20s-trivia" className="block py-1 px-2 hover:bg-gray-800">
-                Roaring 20s Trivia
+              <Link
+                to="/characters"
+                className="block py-1 px-2 hover:bg-gray-800"
+              >
+                Characters
               </Link>
             </div>
           </div>
 
-          <Link to="/archive" className="hover:text-yellow-400 transition-colors">
-            F. Scott Fitzgerald Archive
+          <Link
+            to="/timeline"
+            className="hover:text-yellow-400 transition-colors"
+          >
+            Timeline
           </Link>
 
-          <Link to="/timeline" className="hover:text-yellow-400 transition-colors">
-            Timeline
+          <Link
+            to="/author"
+            className="hover:text-yellow-400 transition-colors"
+          >
+            Author
+          </Link>
+
+          <Link
+            to="/archive"
+            className="hover:text-yellow-400 transition-colors"
+          >
+            F. Scott Fitzgerald Archive
           </Link>
 
           <div className="relative group">
             <button className="flex items-center space-x-1 hover:text-yellow-400 transition-colors">
-              <span>Characters</span>
+              <span>Quizzes & Puzzles</span>
               <ChevronDown className="h-4 w-4" />
             </button>
             <div className="absolute hidden group-hover:block bg-gray-900 p-2 min-w-40 z-10">
-              <Link to="/jaygatsby" className="block py-1 px-2 hover:bg-gray-800">
-                Jay Gatsby
+              <Link
+                to="/character-quiz"
+                className="block py-1 px-2 hover:bg-gray-800"
+              >
+                Which Character Are You?
               </Link>
-              <Link to="/characters/daisy-buchanan" className="block py-1 px-2 hover:bg-gray-800">
-                Daisy Buchanan
+              <Link
+                to="/timeline-challenge"
+                className="block py-1 px-2 hover:bg-gray-800"
+              >
+                Plot Quiz
               </Link>
-              <Link to="/characters/nick-carraway" className="block py-1 px-2 hover:bg-gray-800">
-                Nick Carraway
-              </Link>
-              <Link to="/characters/tom-buchanan" className="block py-1 px-2 hover:bg-gray-800">
-                Tom Buchanan
-              </Link>
-              <Link to="/characters/jordan-baker" className="block py-1 px-2 hover:bg-gray-800">
-                Jordan Baker
+              <Link
+                to="/roaring-20s-trivia"
+                className="block py-1 px-2 hover:bg-gray-800"
+              >
+                Theme Quiz
               </Link>
             </div>
           </div>
-
-          <Link to="/author" className="hover:text-yellow-400 transition-colors">
-            About the Author
-          </Link>
         </div>
       </nav>
     </div>

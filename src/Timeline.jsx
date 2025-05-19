@@ -238,7 +238,6 @@ const Timeline = () => {
 
         {/* Instructions */}
         <div className="fixed top-40 right-8 bg-gray-900/80 p-4 rounded-lg border border-amber-500/30 max-w-xs">
-          <h3 className="text-amber-300 font-bold mb-2">How to Use</h3>
           <p className="text-gray-300 text-sm">
             Hover over timeline points to preview events. Click a point to lock the view and see full details.
           </p>
