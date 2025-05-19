@@ -19,7 +19,7 @@ createRoot(document.getElementById('root')).render(
         <Route path="/quizzes" element={<Quizzes />} />
         <Route path="/archive" element={<Archive />} />
         <Route path="/timeline" element={<Timeline />} />
-        <Route path="/characters" element={<Characters />} />
+        <Route path="/characters/:id" element={<Characters />} />
         <Route path="/history" element={<History />} />
         <Route path="/author" element={<Author />} />
         <Route path="/character-quiz" element={<CharacterQuiz />} />

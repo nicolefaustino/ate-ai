@@ -83,19 +83,19 @@ export default function Header() {
               <ChevronDown className="h-4 w-4" />
             </button>
             <div className="absolute hidden group-hover:block bg-gray-900 p-2 min-w-40 z-10">
-              <Link to="/characters/jay-gatsby" className="block py-1 px-2 hover:bg-gray-800">
+              <Link to="/characters/gatsby" className="block py-1 px-2 hover:bg-gray-800">
                 Jay Gatsby
               </Link>
-              <Link to="/characters/daisy-buchanan" className="block py-1 px-2 hover:bg-gray-800">
+              <Link to="/characters/daisy" className="block py-1 px-2 hover:bg-gray-800">
                 Daisy Buchanan
               </Link>
-              <Link to="/characters/nick-carraway" className="block py-1 px-2 hover:bg-gray-800">
+              <Link to="/characters/nick" className="block py-1 px-2 hover:bg-gray-800">
                 Nick Carraway
               </Link>
-              <Link to="/characters/tom-buchanan" className="block py-1 px-2 hover:bg-gray-800">
+              <Link to="/characters/tom" className="block py-1 px-2 hover:bg-gray-800">
                 Tom Buchanan
               </Link>
-              <Link to="/characters/jordan-baker" className="block py-1 px-2 hover:bg-gray-800">
+              <Link to="/characters/jordan" className="block py-1 px-2 hover:bg-gray-800">
                 Jordan Baker
               </Link>
             </div>
