@@ -101,7 +101,7 @@ export default function Header() {
                 Which Character Are You?
               </Link>
               <Link
-                to="/timeline-challenge"
+                to="/plotquiz"
                 className="block py-1 px-2 hover:bg-gray-800"
               >
                 Plot Quiz
