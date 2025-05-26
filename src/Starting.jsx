@@ -54,9 +54,6 @@ export default function GatsbyLanding() {
                 Discover the symbolism behind Gatsby's distant green light and
                 what it represents in the novel.
               </p>
-              <a href="#" className="text-amber-400 hover:text-amber-300">
-                Read more →
-              </a>
             </div>
 
             <div className="bg-gray-900 bg-opacity-80 p-6 rounded-lg border border-amber-500/30 hover:border-amber-500 transition-all">
@@ -67,9 +64,6 @@ export default function GatsbyLanding() {
                 Explore the lavish celebrations that made Gatsby famous and
                 their significance to the story.
               </p>
-              <a href="#" className="text-amber-400 hover:text-amber-300">
-                Read more →
-              </a>
             </div>
 
             <div className="bg-gray-900 bg-opacity-80 p-6 rounded-lg border border-amber-500/30 hover:border-amber-500 transition-all">
@@ -80,9 +74,6 @@ export default function GatsbyLanding() {
                 Understand the stark contrast between wealth and poverty in this
                 symbolic setting.
               </p>
-              <a href="#" className="text-amber-400 hover:text-amber-300">
-                Read more →
-              </a>
             </div>
           </div>
         </div>
