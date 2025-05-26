@@ -80,12 +80,6 @@ export default function Header() {
               >
                 Plot Quiz
               </Link>
-              <Link
-                to="/roaring-20s-trivia"
-                className="block py-1 px-2 hover:bg-gray-800"
-              >
-                Theme Quiz
-              </Link>
             </div>
           </div>
         </div>
