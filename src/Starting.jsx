@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Header from "./Header"; 
+import { Link } from "react-router-dom";
 
 export default function GatsbyLanding() {
   const [searchQuery, setSearchQuery] = useState("");
@@ -36,9 +37,11 @@ export default function GatsbyLanding() {
               Step into the glittering world of wealth, ambition, and the
               American Dream. Explore the iconic novel that defined an era.
             </p>
+            <Link to="/summary">
             <button className="cursor-pointer bg-gradient-to-r from-amber-500 to-yellow-600 text-white px-8 py-3 rounded-4xl font-medium hover:from-amber-600 hover:to-yellow-700 transition-all text-sm">
               Read More
             </button>
+            </Link>
           </div>
 
           {/* Featured sections */}
