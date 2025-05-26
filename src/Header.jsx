@@ -1,15 +1,7 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Search, ChevronDown } from "lucide-react";
 
 export default function Header() {
-  const [searchQuery, setSearchQuery] = useState("");
-
-  const handleSearch = (e) => {
-    e.preventDefault();
-    console.log("Searching for:", searchQuery);
-  };
-
   return (
     <div>
       {/* Header */}
@@ -22,24 +14,6 @@ export default function Header() {
               className="h-16 object-contain"
             />
           </Link>
-
-          <div className="absolute right-0">
-            <form onSubmit={handleSearch} className="flex items-center">
-              <input
-                type="text"
-                placeholder="Search"
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                className="bg-gray-800 text-white rounded-l-full px-4 py-1 focus:outline-none"
-              />
-              <button
-                type="submit"
-                className="bg-gray-800 rounded-r-full px-2 py-1"
-              >
-                <Search className="h-5 w-5 text-white" />
-              </button>
-            </form>
-          </div>
         </div>
       </header>
 
