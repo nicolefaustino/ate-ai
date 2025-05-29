@@ -10,7 +10,7 @@ export default function Chatbot() {
     <div className="min-h-screen flex flex-col bg-[#FFF8E1]">
       {/* Header */}
       <div className="bg-[#E53E3E] px-4 py-3 flex items-center">
-        <Link to="/" className="mr-3">
+        <Link to="/landing" className="mr-3">
           <ArrowLeftIcon className="w-6 h-6 text-white" />
         </Link>
         <div className="flex items-center gap-2">

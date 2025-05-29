@@ -1,11 +1,10 @@
 import {
   ArrowRightIcon,
-  Bars3Icon,
-  ShareIcon,
   ChartBarIcon,
   ChatBubbleLeftRightIcon,
   QrCodeIcon,
   MicrophoneIcon,
+  ArrowRightOnRectangleIcon,
 } from "@heroicons/react/24/outline";
 import { Link } from "react-router-dom";
 
@@ -15,25 +14,29 @@ export default function Landing() {
       {/* Header */}
       <div className="bg-[#E53E3E] px-4 py-3 flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <Bars3Icon className="w-6 h-6 text-white" />
           <div>
             <h1 className="text-white font-bold text-lg">Ate Ai</h1>
             <p className="text-white text-xs opacity-90">Your Suki helper!</p>
           </div>
         </div>
-        <ShareIcon className="w-6 h-6 text-white" />
+        <ArrowRightOnRectangleIcon className="w-6 h-6 text-white" />
       </div>
 
       <div className="px-4 py-6 space-y-6">
         {/* Profile Card */}
-        <div className="bg-white rounded-2xl p-4 flex items-center gap-3 shadow-sm">
-          <div className="w-12 h-12 rounded-full bg-[#8B4513] flex items-center justify-center">
-            <span className="text-2xl">👩🏻</span>
+        <div className="bg-white rounded-2xl p-4 flex items-center justify-between shadow-sm">
+          <div className="flex items-center gap-3">
+            <div className="w-12 h-12 rounded-full bg-[#8B4513] flex items-center justify-center">
+              <span className="text-2xl">👩🏻</span>
+            </div>
+            <div>
+              <h2 className="font-semibold text-gray-800">Ano ang</h2>
+              <h2 className="font-semibold text-gray-800">mabenta ngayon?</h2>
+            </div>
           </div>
-          <div>
-            <h2 className="font-semibold text-gray-800">AI para sa</h2>
-            <h2 className="font-semibold text-gray-800">Tindahan ng Masa</h2>
-          </div>
+          <Link to="/mabenta">
+          <ArrowRightIcon className="w-5 h-5 text-gray-400" />
+          </Link>
         </div>
 
         {/* Features Section */}
@@ -62,7 +65,9 @@ export default function Landing() {
                   </p>
                 </div>
               </div>
-              <ArrowRightIcon className="w-5 h-5 text-gray-400" />
+              <Link to="/trackkita">
+                <ArrowRightIcon className="w-5 h-5 text-gray-400" />
+              </Link>
             </div>
 
             {/* Ate Ai Chatbot */}
@@ -106,7 +111,9 @@ export default function Landing() {
                   </p>
                 </div>
               </div>
-              <ArrowRightIcon className="w-5 h-5 text-gray-400" />
+              <Link to="/scaninventory">
+                <ArrowRightIcon className="w-5 h-5 text-gray-400" />
+              </Link>
             </div>
 
             {/* Sales Log */}
@@ -125,7 +132,9 @@ export default function Landing() {
                   </p>
                 </div>
               </div>
-              <ArrowRightIcon className="w-5 h-5 text-gray-400" />
+              <Link to="/saleslog">
+                <ArrowRightIcon className="w-5 h-5 text-gray-400" />
+              </Link>
             </div>
           </div>
         </div>
