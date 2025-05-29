@@ -6,7 +6,8 @@ import {
   ChatBubbleLeftRightIcon,
   QrCodeIcon,
   MicrophoneIcon,
-} from "@heroicons/react/24/outline"
+} from "@heroicons/react/24/outline";
+import { Link } from "react-router-dom";
 
 export default function Landing() {
   return (
@@ -50,9 +51,15 @@ export default function Landing() {
                   <ChartBarIcon className="w-5 h-5 text-orange-600" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-800">Track your Kita</h4>
-                  <p className="text-xs text-gray-500">Negosyo tips ni Ate Ai</p>
-                  <p className="text-xs text-gray-500">Your smart business mentor</p>
+                  <h4 className="font-semibold text-gray-800">
+                    Track your Kita
+                  </h4>
+                  <p className="text-xs text-gray-500">
+                    Negosyo tips ni Ate Ai
+                  </p>
+                  <p className="text-xs text-gray-500">
+                    Your smart business mentor
+                  </p>
                 </div>
               </div>
               <ArrowRightIcon className="w-5 h-5 text-gray-400" />
@@ -65,12 +72,20 @@ export default function Landing() {
                   <ChatBubbleLeftRightIcon className="w-5 h-5 text-orange-600" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-800">Ate Ai Chatbot</h4>
-                  <p className="text-xs text-gray-500">Negosyo tips ni Ate Ai</p>
-                  <p className="text-xs text-gray-500">Your smart business mentor</p>
+                  <h4 className="font-semibold text-gray-800">
+                    Ate Ai Chatbot
+                  </h4>
+                  <p className="text-xs text-gray-500">
+                    Negosyo tips ni Ate Ai
+                  </p>
+                  <p className="text-xs text-gray-500">
+                    Your smart business mentor
+                  </p>
                 </div>
               </div>
-              <ArrowRightIcon className="w-5 h-5 text-gray-400" />
+              <Link to="/chatbot">
+                <ArrowRightIcon className="w-5 h-5 text-gray-400 hover:text-gray-600 cursor-pointer transition" />
+              </Link>
             </div>
 
             {/* Scan Inventory */}
@@ -80,9 +95,15 @@ export default function Landing() {
                   <QrCodeIcon className="w-5 h-5 text-orange-600" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-800">Scan Inventory</h4>
-                  <p className="text-xs text-gray-500">Negosyo tips ni Ate Ai</p>
-                  <p className="text-xs text-gray-500">Your smart business mentor</p>
+                  <h4 className="font-semibold text-gray-800">
+                    Scan Inventory
+                  </h4>
+                  <p className="text-xs text-gray-500">
+                    Negosyo tips ni Ate Ai
+                  </p>
+                  <p className="text-xs text-gray-500">
+                    Your smart business mentor
+                  </p>
                 </div>
               </div>
               <ArrowRightIcon className="w-5 h-5 text-gray-400" />
@@ -96,8 +117,12 @@ export default function Landing() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-800">Sales Log</h4>
-                  <p className="text-xs text-gray-500">Negosyo tips ni Ate Ai</p>
-                  <p className="text-xs text-gray-500">Your smart business mentor</p>
+                  <p className="text-xs text-gray-500">
+                    Negosyo tips ni Ate Ai
+                  </p>
+                  <p className="text-xs text-gray-500">
+                    Your smart business mentor
+                  </p>
                 </div>
               </div>
               <ArrowRightIcon className="w-5 h-5 text-gray-400" />
@@ -109,9 +134,14 @@ export default function Landing() {
       {/* Store illustration at bottom */}
       <div className="mt-auto pt-6">
         <div className="max-w-sm w-full">
-          <img src="https://i.imgur.com/xUySM7a.png" alt="Sari Sari Store illustration" className="w-full h-auto" crossOrigin="anonymous" />
+          <img
+            src="https://i.imgur.com/xUySM7a.png"
+            alt="Sari Sari Store illustration"
+            className="w-full h-auto"
+            crossOrigin="anonymous"
+          />
         </div>
       </div>
     </div>
-  )
+  );
 }
