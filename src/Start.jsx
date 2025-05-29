@@ -1,4 +1,6 @@
-export default function SariSariApp() {
+import { Link } from 'react-router-dom';
+
+export default function Start() {
   return (
     <div className="min-h-screen bg-[#F5F1E8] flex flex-col">
       {/* Banner with bunting */}
@@ -15,16 +17,20 @@ export default function SariSariApp() {
       <div className="flex-1 flex flex-col items-center justify-center px-8 py-12">
         {/* App title and avatar */}
         <div className="flex items-center gap-3 mb-12">
-          <h1 className="text-4xl font-bold text-white text-shadow-lg">Ate Ai</h1>
+          <h1 className="text-4xl font-bold text-white text-shadow-lg">
+            Ate Ai
+          </h1>
           <div className="w-12 h-12 rounded-full bg-[#8B4513] flex items-center justify-center">
             <span className="text-2xl">👩🏻</span>
           </div>
         </div>
-
-        {/* Get started button */}
+        
+      {/* Get started button */}
+      <Link to="/landing">
         <button className="bg-[#E53E3E] hover:bg-[#C53030] text-white font-semibold py-4 px-12 rounded-full text-lg shadow-lg transition-colors">
           {"Simulan na'tin!"}
         </button>
+      </Link>
       </div>
 
       {/* Store illustration at bottom */}
@@ -37,5 +43,5 @@ export default function SariSariApp() {
         />
       </div>
     </div>
-  )
+  );
 }
