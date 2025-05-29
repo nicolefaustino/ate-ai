@@ -20,7 +20,9 @@
     "firebase": "^11.8.1",
     "firebase-functions": "^5.1.0",
     "framer-motion": "^12.12.1",
+    "lamejs": "^1.2.1",
     "lucide-react": "^0.507.0",
+    "mic-recorder-to-mp3": "^2.2.2",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-router-dom": "^7.6.1"
