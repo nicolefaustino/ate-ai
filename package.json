@@ -3,6 +3,9 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "engines": {
+    "node": "22"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -10,8 +13,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@google/generative-ai": "^0.24.1",
     "@heroicons/react": "^2.2.0",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
     "firebase": "^11.8.1",
+    "firebase-functions": "^5.1.0",
     "framer-motion": "^12.12.1",
     "lucide-react": "^0.507.0",
     "react": "^19.1.0",
